@@ -39,6 +39,7 @@ public class Ex_4_Operator {
 		else {
 				big = y;
 			}
+		System.out.println(result);
 	
 
 	}
