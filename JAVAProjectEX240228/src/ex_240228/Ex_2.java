@@ -1,23 +1,5 @@
 package ex_240228;
 
-class Person {
-	private String username;
-	private String useremail;
-	
-	public Person( String name, String email) {
-		this.username = name;
-		this.useremail = email;
-	}
-	
-public void dodance() {
-	System.out.println("춤추기");
-}
-public void info() {
-	System.out.println();
-}
-}
-
-
 
 public class Ex_2 {
 	
@@ -78,7 +60,38 @@ public class Ex_2 {
 		boolean ischecked = false;
 	//레퍼런스 타입으로 선언하기.
 	// 클래스명 참조형 변수 이름 = new(키워드) 클래스생성자(매개변수가 2개)
-		Person lsyPerson = new Person("이상용", "lsy@aaa.aaa");
+		
+	// 그나마 쓰는 이스케이프 문자 : \t, \"
+		System.out.println("특수문자 \b : " + '\b');
+		System.out.println("특수문자 \t : " + '\t' + "sample");
+		System.out.println("특수문자 \n : " + '\n' + "sample");
+		System.out.println("특수문자 \f : " + '\f' + "sample");
+		System.out.println("특수문자 \r : " + '\r' + "sample");
+		System.out.println("특수문자 \" : " + '\"' + "sample");
+		System.out.println("특수문자 \\ : " + '\\' + "sample");
+		System.out.println("특수문자 \' : " + '\'' + "sample");
+		
+		
+	// null, 헤퍼런스가 할당이 안 됐다는 뜻. 기본형에서 사용 x
+		String strtest = null;
+		
+	// 상수 선언, final, 재할당 불가능
+		final int fnum = 301;
+//		fnum = 2;
+		
+	// 타입 변환, 캐스팅 ( 던진다 )
+	// 작은 집 -> 큰 집으로 갈 때, 문제가 없지만 반대의 경우에는 값손실이 발생한다. 기본형
+		byte bytenum1 = 10;
+		long longnum1 = bytenum1;
+		System.out.println("타입 변환 테스트 작은 집에서 큰집으로 : " + longnum1);
+	// 큰 집 -> 작은 집. 문제가 발생. 문법 검사기에서 걸렸음.
+	// 강제 형 변환을 위해 연산자, 캐스팅 연산자, ex) (강제로 변환할 형) 변수;
+		int intnum2 = 130;
+		byte bytenum2 = (byte)intnum2;
+		System.out.println("큰 집에서 작은 집으로 강제 형 변환 테스트 : " + bytenum2);
+	// 기본형에서는 사용하지 않고 레퍼런스 타입에서 부모/자식 클래스 간 변환 시에 사용한다.
+		
+		
 		
 		
 		
