@@ -2,7 +2,7 @@ package ex_240228;
 
 
 public class Ex_2 {
-	
+	// 구성이, 필드(1) 필드(변수) 메서드(함수)
 	
 
 	public static void main(String[] args) {

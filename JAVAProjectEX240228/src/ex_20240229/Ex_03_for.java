@@ -2,9 +2,34 @@ package ex_20240229;
 
 import java.util.Scanner;
 
-public class Ex_3_for {
+public class Ex_03_for {
 
 	public static void main(String[] args) {
+		
+		
+		while (true) {
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("n까지 수를 입력해주세요, 0 = 종료");
+			int number = scanner.nextInt();
+			
+			
+			if (number >= 1) {
+				int result = sumn(number);
+				System.out.println("결과는 : " + result);
+			}
+				else if (number==0) {
+					break;
+				}
+				else {
+					System.out.println("양수 또는 0 입력");
+				}
+		}
+		
+		
+		
+		
+		
+		
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("더할 숫자를 입력하세요.");

@@ -2,7 +2,7 @@ package ex_20240229;
 
 import java.security.PublicKey;
 
-public class Ex_7_Array_test2 {
+public class Ex_07_Array_test2 {
 
 	public static void main(String[] args) {
 		int intArray[] = new int[5];

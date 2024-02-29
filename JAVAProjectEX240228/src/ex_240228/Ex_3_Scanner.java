@@ -10,6 +10,7 @@ public class Ex_3_Scanner {
 
 		System.out.println("당신의 이름과 나이를 작성해주세요. 이름 나이  >>");
 		Scanner scanner = new Scanner(System.in);
+	// system.in , 유저로부터 입력 받은 내용을 바이트로 읽고 scanner가 문자열로 변환한다.
 		String nameString = scanner.next();
 		int age = scanner.nextInt();	
 	// 나이 입력 후 받을 변수

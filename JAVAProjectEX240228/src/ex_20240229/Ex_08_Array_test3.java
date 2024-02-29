@@ -2,35 +2,16 @@ package ex_20240229;
 
 import java.util.Scanner;
 
-public class Ex_9_Array_test5 {
+public class Ex_08_Array_test3 {
 
 	public static void main(String[] args) {
-		while (true) {
-			Scanner scanner = new Scanner(System.in);
-			System.out.println("양수 5개로 자동생성, 최소,최대,평균,총합 프로그램");
-			System.out.println("1번: 프로그램 자동실행 , 0번: 종료시 누르기 >>");
-			int number = scanner.nextInt();
+		// 양수 5개를 입력받아서, 배열에 저장하고, 제일 큰수를 출력하기. 합계, 평균, 최솟값도 구하기.
+		// 함수를 만들어서, 매개변수에 배열 타입으로 받아서, 출력하기.
+		Scanner scanner = new Scanner(System.in);
 
-			// 조건문 분기
-			if (number == 0) {
-				System.out.println("프로그램 종료합니다.");
-
-				// 사용 안하는 메모리는 반납을 꼭 해주기.
-				scanner.close();
-				break;
-			} else {
-				// number == 1 인경우, 양수만 5개 더하는 프로그램.
-				// 자동으로 5개 양수값을 갖는 배열 만드는 함수 호출
-				int array[] = new int[5];
-				// 만들어진 배열을, 집계하는 함수를 호출
-				showAggregation(array);
-			}
-
-		}
-
-	}
-
-	public static void showAggregation(int[] intArray) {
+		System.out.println("(1~100중에서)연속된 양수만 5개 입력해주세요>>");
+		// 배열선언
+		int intArray[] = new int[5];
 		// 나중에 출력하기 위한 준비물
 		int max = 0;
 		int min = 0;
@@ -39,8 +20,8 @@ public class Ex_9_Array_test5 {
 		int avg = 0;
 
 		for (int i = 0; i < intArray.length; i++) {
-			// 자동으로 0이상 100미만의 랜덤한 숫자 넣기로 변경. 
-			intArray[i] = (int)(Math.random()*100 +1);
+			// 배열에 입력된 양수 5개 값 설정
+			intArray[i] = scanner.nextInt();
 			min = intArray[0];
 			// 최대값
 
@@ -60,10 +41,7 @@ public class Ex_9_Array_test5 {
 		}
 		// 배열에서 정렬 기능이 없어서 패스 함.
 		// 최소값, 배열을 정렬 후,(오름차순으로 정렬하고, 첫번째 요소가 가장 작은 요소가 됨.)
-		for(int i = 0 ; i < intArray.length; i++) {
-			System.out.print(intArray[i]+" ");
-		}
-		System.out.println("=======================");
+
 		System.out.println("최댓값 : " + max + ", 최솟값 : " + min);
 		System.out.println("합계 : " + sum + ", 평균 : " + sum / intArray.length);
 
@@ -73,6 +51,5 @@ public class Ex_9_Array_test5 {
 		// 최대, 최소, 평균, 총합을 구하는 함수에, 배열로 전달해서 결과 구하기.
 
 	}
-
 
 }

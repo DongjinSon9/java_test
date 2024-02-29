@@ -2,7 +2,7 @@ package ex_20240229;
 
 import java.util.Scanner;
 
-public class Ex_4_NestedFor {
+public class Ex_04_NestedFor {
 
 	
 // 입력 받은 수까지 구구단 출력하기

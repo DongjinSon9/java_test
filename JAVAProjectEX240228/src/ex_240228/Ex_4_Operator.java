@@ -26,7 +26,7 @@ public class Ex_4_Operator {
 		System.out.println("char \'a\'에 해당하는 유니코드 값 십진수 표현 : " + chartest1toint);
 		System.out.println("char \'b\'에 해당하는 유니코드 값 십진수 표현 : " + chartest2toint);
 		
-	// 삼항다항식   (조건식)?true:false
+	// 삼항다항식   (조건식)?true(참일 때 실행할 문장):false(거짓일 때 실행할 문장)
 		int x =10;
 		int y= 12;
 		int result = (x>y)?x:y;

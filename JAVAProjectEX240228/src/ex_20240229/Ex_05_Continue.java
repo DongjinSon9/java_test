@@ -2,7 +2,7 @@ package ex_20240229;
 
 import java.util.Scanner;
 
-public class Ex_5_Continue {
+public class Ex_05_Continue {
 
 	public static void main(String[] args) {
 		// 양수만 더하기
