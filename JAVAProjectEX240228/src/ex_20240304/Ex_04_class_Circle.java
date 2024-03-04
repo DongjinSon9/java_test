@@ -29,6 +29,31 @@ public class Ex_04_class_Circle {
 		Circle kimchiPizza = new Circle(20, "김치전");
 		kimchiPizza.calcGetArea();
 		kimchiPizza.showInfo();
+		System.out.println("----------------------------");
+		
+		
+		// 배열에 담을 타입을 레퍼런스형으로 변경
+		Circle[] koreanPizzas = new Circle[5];
+		koreanPizzas[0] = koreanPizza;
+		koreanPizzas[1] = kimchiPizza;
+		koreanPizzas[2] = new Circle(10, "감자전");
+		koreanPizzas[3] = new Circle(10, "육전");
+		koreanPizzas[4] = new Circle(15, "명태전");
+		
+		// 배열의 선언과 초기화를 동시에 하기
+		Circle[] koreanPizzas2 = {koreanPizza, kimchiPizza, new Circle(10, "감자전"), new Circle(10, "육전"), new Circle(15, "명태전")};
+		
+		
+		// 반복문을 이용해서 배열에 담은 circle 타입의 레퍼런스에 각각 접근해서
+		// showinfo에 호출 해보기
+		// for ~ each 문법 : for(담을변수타입 변수명 : 컬렉션(배열))
+		for(Circle koreanFood  : koreanPizzas) {
+			koreanFood.showInfo();
+		}
+		
+		for(Circle koreanFood2  : koreanPizzas2) {
+			koreanFood2.showInfo();
+		}
 
 	}
 
