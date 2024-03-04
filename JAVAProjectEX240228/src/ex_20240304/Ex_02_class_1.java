@@ -34,9 +34,35 @@ public class Ex_02_class_1 {
 		//    => 선언시 기본값을 미리 할당하고 생성하기
 		//       Animal ani4 = new Animal("ani4", 10);
 		Animal ani4 = new Animal("ani4", 10);
+		ani4.introduceMethod();
+		ani4.soundMethod();
+		
+		// 매개변수가 3개인 생성자
+		Animal ani5 = new Animal("개", 10, "멍멍");
+		ani5.introduceMethod();
+		ani5.soundMethod();
+		
 		
 		// 3. 해당 기능들이 각각의 동물 이름이나 나이 등을 각각 출력하는 방법
-
+		
+		String [] likeFoodLiStrings = {"고기", "사료"};
+		
+		
+		Animal ani6 = new Animal("똘똘이", 5, "멍멍", likeFoodLiStrings);
+		ani6.introduceMethod();
+		ani6.soundMethod();
+		ani6.likeFoodList(likeFoodLiStrings);
+		
+		
+		
+		
+		
+		// 또 다른 예) Idol 클래스 만들고
+		// 1. 그룹명, 2. 그룹인원, 3. 그룹원이름
+		
+		// 기능
+		// 1. 소개(그룹이름으로), 2. 그룹원의 이름 소개, 3. 앨범이름 소개하는 기능
+		// 인스턴스 BTS, 블랙핑크
 
 	}
 

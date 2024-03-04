@@ -79,7 +79,7 @@ public class Animal {
 	// 좋아하는 음식을 출력하는 기능
 	public void likeFoodList(String [] likeFoodList) {
 		for(int i = 0; i < likeFoodList.length; i++) {
-			System.out.println("좋아하는 음식 : " + i + "번) " + likeFoodList[i] +'\t');
+			System.out.println("좋아하는 음식 : " + i + "번) " + likeFoodList[i]);
 		}
 	}
 
