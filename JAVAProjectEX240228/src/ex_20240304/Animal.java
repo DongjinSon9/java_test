@@ -20,6 +20,20 @@ public class Animal {
 	public String name;
 	public int age;
 	public String soundtype;
+	// 동물이 좋아하는 음식
+	public String[] favoriateFood;
+	
+	// 매개변수가 4개인 생성자를 만들기
+	
+	public Animal(String name, int age, String sound, String[] likefoods) {
+		this.name = name;
+		this.age = age;
+		this.soundtype = sound;
+		this.favoriateFood = likefoods;
+
+	}
+	
+	
 
 	// 매개변수가 2개인 생성자가 정의가 안 돼있음
 	// Animal ani4 = new Animal("ani4", 10);
@@ -60,6 +74,13 @@ public class Animal {
 
 	public void soundMethod() {
 		System.out.println("제 소리는요 " + soundtype);
+	}
+	
+	// 좋아하는 음식을 출력하는 기능
+	public void likeFoodList(String [] likeFoodList) {
+		for(int i = 0; i < likeFoodList.length; i++) {
+			System.out.println("좋아하는 음식 : " + i + "번) " + likeFoodList[i] +'\t');
+		}
 	}
 
 }
