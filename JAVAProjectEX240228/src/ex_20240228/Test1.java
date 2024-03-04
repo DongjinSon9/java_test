@@ -1,4 +1,4 @@
-package ex_240228;
+package ex_20240228;
 
 public class Test1 {
 

@@ -1,6 +1,5 @@
 package ex_20240229;
 
-import java.security.PublicKey;
 import java.util.Scanner;
 
 public class Ex_12_NestedArray_test9 {
@@ -9,7 +8,8 @@ public class Ex_12_NestedArray_test9 {
 		// 국어, 영어, 수학 3과목의 점수를 입력받아서, 평균, 총점.
 		// 1) 기본 배열을 만들어서, 1번 학생 : {70,80,90}, 이런형식으로 이중 배열로, 5명의 점수를 더미로
 		// 출력 형식 : 1번 학생의 총점 : ? , 평균 : ?
-		int score[][] = { { 70, 80, 90 }, // score [0][]
+		int score[][] = { 
+				{ 70, 80, 90 }, // score [0][]
 				{ 60, 70, 80 }, // score [1][]
 				{ 90, 100, 60 }, // score [2][]
 				{ 100, 30, 60 }, // score [3][]
@@ -55,11 +55,9 @@ public class Ex_12_NestedArray_test9 {
 		// 임시 배열에 점수 넣기는
 		for (int i = 0; i < sampleScore.length; i++) {
 			for (int j = 0; j < sampleScore[i].length; j++) {
-				boolean isCheckedScore = false;
 				int score = 0;
 				// 1이상 101미만
 				while (true) {
-
 					score = (int) (Math.random() * 100 + 1);
 					if (score >= 60) {
 						break;
@@ -69,7 +67,6 @@ public class Ex_12_NestedArray_test9 {
 				if (score >= 60) {
 					sampleScore[i][j] = score;
 				}
-
 			}
 		}
 		return sampleScore;

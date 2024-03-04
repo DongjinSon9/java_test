@@ -1,4 +1,4 @@
-package ex_240228;
+package ex_20240228;
 
 import java.net.MulticastSocket;
 import java.security.PublicKey;
