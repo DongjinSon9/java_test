@@ -1,35 +1,5 @@
 package ex_20240304;
 
-class Animal {
-	// 하나의 클래스에는 각각 한 개씩 원래 사용을 함
-	// 지금은 예시로 클래스 안에 ㄸ다른 클래스를 보여주기용
-	// 파일을 분리함
-	
-	// 클래스 : 설계도, 공장
-	// 실체 : 체품 , 인스턴스라고 부른다.
-	
-	// 구성 : 멤버(변수), 메서드(기능)
-	
-	
-//	private String name;   외부 접근이 안 돼서 public으로 전환
-//	private int age; 
-	public String name;
-	public int age;
-	
-	// 메서드 : 소개하는 기능, 소리 기능
-	
-	public void introduceMethod()  {
-		System.out.println("안녕하세요 현재는 더미로 작업 중, 곧 동적으로 할 예정임");
-	}
-	
-	public void soundMethod() {
-		System.out.println("현재는 더미로 소리를 냅니다. 곧 동적으로 할 예정임");
-	}
-	
-	
-	
-}
-
 public class Ex_02_class_1 {
 
 	public static void main(String[] args) {
@@ -51,6 +21,22 @@ public class Ex_02_class_1 {
 		ani1.age = 10;
 		ani1.introduceMethod();
 		ani1.soundMethod();
+		
+		ani2.name = "ani2";
+		ani2.age = 10;
+		ani2.introduceMethod();
+		ani2.soundMethod();
+		
+		// 불만사항, 요구사항
+		// 1. 클래스 내부에 또다른 클래스가 있음
+		//    => 파일을 분리 했음.
+		// 2. 인스턴스를 생성시 매번 인스턴스에 점을 찍고 재할당하는 부분
+		//    => 선언시 기본값을 미리 할당하고 생성하기
+		//       Animal ani4 = new Animal("ani4", 10);
+		Animal ani4 = new Animal("ani4", 10);
+		
+		// 3. 해당 기능들이 각각의 동물 이름이나 나이 등을 각각 출력하는 방법
+
 
 	}
 
