@@ -14,9 +14,21 @@ public class Ex_04_class_Circle {
 //		koreanPizza.name = "김치전";
 		// 안보이네 , 그러면 어쩔? setter/ getter 로 접근이 가능한 매개체를 만들기.
 		// 클래스에서 만들기.
+		// setter 이용해서 값 설정
 		koreanPizza.setName("부추전");
 		koreanPizza.setRadius(15);
+		// 메서드를 이용해서 정보 접근
 		koreanPizza.showInfo();
+		
+		// getter 이용해서 정보 접근
+		System.out.println("getter로 접근 " + koreanPizza.getName());
+		System.out.println("getter로 접근 " + koreanPizza.getRadius());
+		
+		
+		// 김치전
+		Circle kimchiPizza = new Circle(20, "김치전");
+		kimchiPizza.calcGetArea();
+		kimchiPizza.showInfo();
 
 	}
 
