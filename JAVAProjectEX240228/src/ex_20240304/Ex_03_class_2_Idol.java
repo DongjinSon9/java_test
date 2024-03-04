@@ -29,7 +29,6 @@ public class Ex_03_class_2_Idol {
 		
 		
 		
-		
 		Idol btsIdol = new Idol("BTS", groupMemberStrings, groupAlbum);
 		btsIdol.introduceMember();
 		btsIdol.introduceAlbum();
