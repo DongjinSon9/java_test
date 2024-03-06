@@ -27,10 +27,21 @@ public class Ex_01_try_class_boygroup_inheritance_1_main {
 		boyGroup1.introduceMember();
 		boyGroup1.introduceAlbum();
 		
+		
+		
+		
 		// 부모클래스명으로 참조형변수 = new 자식클래스명();
 		// 참조형변수. >>>> 접근 가능한 메서드는 부모꺼만
+		// 업캐스팅
 //		Idol test = new Ex_01_try_class_boygroup_inheritance_1(null, boygroups, boygroupsAlbum);
 //		test.   >>>>> 부모 메서드만 보인다.
+		
+		
+		// 해당 인스턴스에서 부모 메서드만 보인다면, 자식 메서드를 보려면? 1) 업캐스팅 2) 다운캐스팅   >> 답 : 2) 다운캐스팅
+		// 자식클래스명 레퍼런스명 = (자식클래스명) 부모클래스의인스턴스;
+//		Ex_01_try_class_boygroup_inheritance_1 test2 = (Ex_01_try_class_boygroup_inheritance_1)test;
+		
+		
 		
 		// 접근 지정자 
 		// 1) public : 모든 곳에서 접근 가능
