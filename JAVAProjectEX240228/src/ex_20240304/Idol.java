@@ -1,6 +1,5 @@
 package ex_20240304;
 
-import java.security.PublicKey;
 
 //또 다른 예) Idol 클래스 만들고
 // 1. 그룹명
