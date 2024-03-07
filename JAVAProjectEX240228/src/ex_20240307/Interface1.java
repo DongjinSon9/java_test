@@ -1,5 +1,6 @@
 package ex_20240307;
 
+
 public interface Interface1 {
 		// 인터페이스 설계, 구성 : 1) 상수  2) 추상 메서드
 		// 반드시 이 기능은 구현해야하는 것들
@@ -9,6 +10,5 @@ public interface Interface1 {
 	void showInOutPlace(int checkInOutPlace);
 	void showUseItems(String [] items);
 	void showTeamNameOrMember(String [] teamOrMember);
-	
 
 }
