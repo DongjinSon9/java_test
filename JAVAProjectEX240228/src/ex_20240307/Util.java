@@ -12,6 +12,10 @@ public class Util {
 		System.out.println("등록 시간 : " + createTime);
 
 	}
+	
+	public static void name() {
+		
+	}
 
 	public static void showSeason(Sports sports, int season) {
 		switch (season) {
