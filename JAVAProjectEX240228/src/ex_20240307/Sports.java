@@ -5,7 +5,8 @@ import java.net.NoRouteToHostException;
 public class Sports {
 	// 주제
 	// sports : 부모
-	// 공통의 멤버 변수 3개, 1) 이름 2) 인원수 3) 경기 시간 4) 경기 장소
+	// 공통의 멤버 변수 3개 -> 6개, 1) 이름 2) 인원수 3) 경기 시간 4) 경기 장소
+	// 시즌, 등록날짜
 	
 	private String sportsName;
 	private int sportsMemberCount;

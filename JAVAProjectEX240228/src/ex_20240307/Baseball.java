@@ -1,8 +1,8 @@
 package ex_20240307;
 
-public class Swimming extends Sports implements Interface1 {
+public class Baseball extends Sports implements Interface1 {
 
-	public Swimming(String sportsName, int sportsMemberCount, String sportsPlayTime, String sportsPlace) {
+	public Baseball(String sportsName, int sportsMemberCount, String sportsPlayTime, String sportsPlace) {
 		super(sportsName, sportsMemberCount, sportsPlayTime, sportsPlace);
 		// TODO Auto-generated constructor stub
 	}
@@ -34,7 +34,5 @@ public class Swimming extends Sports implements Interface1 {
 		}
 
 	}
-	// 자식 클래스이고 부모는 sports
-	// 인터페이스 interface1
 
 }
