@@ -42,13 +42,23 @@ public class Main {
 		swimming2.showUseItems(itemStrings);
 		
 		
-		
-		
+		System.out.println("----------------------------------------------");
+		// baseball 인스턴스 만들기
 		Sports baseball = new Baseball("야구", 9, "약 3시간 전후", "사직야구장");
 		baseball.showInfo();
 		baseball.showPlace();
 		Util.showDate();
 		Util.showSeason(baseball, 1);
+		
+		Baseball baseball2 = (Baseball)baseball;
+		// 다시 메서드를 조회해보면 자식이 재정의한 것도 보인다.
+		baseball2.showInOutPlace(2);
+		// 수영 선수 소개
+		String [] members2 = {"선수1", "선수2", "선수3", "선수4", "선수5", "선수6", "선수7", "선수8"};
+		baseball2.showTeamNameOrMember(members2);
+		// 수영 아이템
+		String [] itemStrings2 = {"배트", "야구공", "글러브", "야구모", "유니폼"};
+		baseball2.showUseItems(itemStrings2);
 		
 
 	}

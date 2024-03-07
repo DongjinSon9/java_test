@@ -21,8 +21,9 @@ public class Swimming extends Sports implements Interface1 {
 	public void showUseItems(String[] items) {
 		System.out.print("사용장비 : ");
 		for (String item : items) {
-			System.out.println(item + " ");
+			System.out.print(item + " ");
 		}
+		System.out.println();
 
 	}
 
@@ -30,8 +31,9 @@ public class Swimming extends Sports implements Interface1 {
 	public void showTeamNameOrMember(String[] teamOrMember) {
 		System.out.println("팀원 및 팀원 소개 : ");
 		for (String teamMember : teamOrMember) {
-			System.out.println(teamMember + " ");
+			System.out.print(teamMember + " ");
 		}
+		System.out.println();
 
 	}
 	// 자식 클래스이고 부모는 sports
