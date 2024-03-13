@@ -10,6 +10,6 @@ public class Ex_01_try_class_boygroup_inheritance_1 extends Idol {
 	
 	public Ex_01_try_class_boygroup_inheritance_1(String groupName, String[] groupMembers, String[] groupAlbums) {
 		super(groupName, groupMembers, groupAlbums); // 부모 초기화
-		// TODO Auto-generated constructor stub
+		
 	}
 }
