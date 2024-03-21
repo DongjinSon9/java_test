@@ -8,7 +8,6 @@ public class DrinkSearch {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-
 		HashMap<String, Integer> drinkInfo = new HashMap<String, Integer>();
 		drinkInfo.put("밀키스", 700);
 		drinkInfo.put("코카콜라", 800);
